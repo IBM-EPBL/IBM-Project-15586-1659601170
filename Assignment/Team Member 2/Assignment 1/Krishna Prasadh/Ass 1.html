@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Myself</title>
+    <style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+.header-container {
+  display: flex;
+  list-style-type: none;
+  justify-content: flex-end;
+  font-size: 1.3rem;
+  font-weight: bold;
+  background-color: #50c878;
+  font-family: "Open Sans", sans-serif;
+  padding: 1.2rem;
+}
+.name {
+  margin-right: auto;
+  color: white;
+}
+.header-right {
+  color: #777;
+  margin-right: 2rem;
+}
+.header-right:hover {
+  color: white;
+  cursor: pointer;
+}
+.info-container {
+  text-align: center;
+  background-image: url(/images/blurred-img.jpg);
+  height: 60vh;
+  background-position: center;
+  background-size: cover;
+}
+.avatar-class {
+  margin-top: 5rem;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+  border: 3px solid white;
+}
+.info-container h2 {
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  color: black;
+  background-color: white;
+  font-size: 35px;
+  border-radius: 0.4rem;
+  padding: 10px 10px 10px 10px;
+}
+.info-container h4 {
+  color: orchid;
+  margin-top: 2rem;
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: black;
+  font-size: 35px;
+  border-radius: 0.4rem;
+  padding: 5px 5px 5px 5px;
+}
+.background-container,
+.goals-container {
+margin: 100px 100px;;
+  width: 100vw;
+  background-color: white;
+  border-bottom: 5px solid  hsla(300, 49%, 60%, 0.945);
+  border-radius: 15px;
+}
+.background-container h3,
+p {
+  padding: 15px 15px;
+  padding-left: 40px;
+}
+.goals-container h3,
+p {
+  padding: 15px 15px;
+  padding-left: 40px;
+}
+.background-container h3 {
+  font-size: 25px;
+  font-weight: bold;
+}
+.goals-container h3 {
+  font-size: 25px;
+  font-weight: bold;
+}
+.section-container {
+  display: flex;
+  background-color: hsla(300, 49%, 90%, 0.945);
+}
+.section-container p {
+  font-family: "Carattere", cursive;
+  font-size: 25px;
+  font-weight: normal;
+  word-spacing: 10px;
+}
+@media (max-width: 600px) {
+  .section-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .background-container,
+  .goals-container {
+    margin: 30px 30px;
+    width: 80vw;
+    border-bottom: 5px solid hsla(300, 49%, 60%, 0.945);
+    border-radius: 15px;
+  }
+}
+footer {
+  text-align: center;
+  background-color: hsla(300, 49%, 90%, 0.945);
+}
+</style>
+  </head>
+  <body>
+    <header>
+      <ul class="header-container">
+        <li class="name">Krishna Prasadh S</li>
+        <li class="header-right">Home</li>
+        <li class="header-right">Contact</li>
+      </ul>
+    </header>
+    <main class="main-container">
+      <section class="info-container">
+        <img
+          class="avatar-class"
+          src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fvector%2Fcloud-network-service-cloud-computing-icon-gm1183396185-332720632&psig=AOvVaw1R4kKK1Cx9XEAcYU993oVZ&ust=1666149208404000&source=images&cd=vfe&ved=0CA0QjRxqFwoTCOiNoc_n6PoCFQAAAAAdAAAAABAO" alter="img"
+          alt="img"
+        />
+        <h2>Hello I am Krishna</h2>
+      </section>
+      <div class="section-container">
+        <section class="background-container">
+          <h3>Study & Life</h3>
+          <p>
+            Hi! I’m Krishna, a computer science student who gonna graduate in 2023. I’m a hard-working, passionate person who believes in the importance of education and accessibility to technological advancements.
+          </p>
+          <p>
+           I’ve always been passionate about learning new things, whether reading a book or watching a movie—I just can’t get enough of it! My most extensive interests include programming, mathematics, and economics—no matter what I’m doing at school or working on in my free time, you’ll always find me surrounded by books and computers.
+          </p>
+          <p>
+           I love teaching myself new things. I started with programming in high school and college, then learned about data science, machine learning, and all the rest. Now that I’ve gotten a taste of teaching myself, I can’t stop. It’s advantageous, and I hope to learn more about the field as my career progresses
+          </p>
+          <p>
+            “Any fool can write code that a computer can understand. Good programmers write code that humans can understand.” – Martin Fowler 
+          </p>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <p><span>&copy;</span> krishna prasadh</p>
+    </footer>
+  </body>
+</html>

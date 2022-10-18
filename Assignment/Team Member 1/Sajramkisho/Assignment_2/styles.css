@@ -1,0 +1,646 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: "PT Sans Narrow", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+@media only screen and (min-width: 1200px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 100vh;
+  }
+
+  .grid-image {
+    background-image: url(/images/hero-desktop.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .grid-content {
+    background: url(/images/bg-pattern-desktop.svg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .logo {
+    background-image: url(/images/logo.svg);
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 400px;
+
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+  }
+
+  .bold {
+    font-size: 6rem;
+    letter-spacing: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0;
+  }
+
+  .black {
+    color: hsl(0, 0%, 25%);
+  }
+
+  .grid-content div,
+  p,
+  input {
+    margin-left: 20rem;
+  }
+
+  .aaha {
+    margin-top: 20px;
+    color: hsl(0, 36%, 70%);
+  }
+
+  .soon {
+    margin-bottom: 2rem;
+  }
+  p {
+    font-size: 1.7rem;
+    width: 600px;
+    color: hsl(0, 36%, 70%);
+    letter-spacing: 0.2rem;
+    word-spacing: 0.3rem;
+  }
+  input {
+    margin-top: 5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 30rem;
+    border-radius: 10rem;
+    font-size: 1.5rem;
+    padding-left: 1rem;
+
+    border: 2px solid hsl(0, 36%, 70%);
+    background: none;
+    outline: none;
+
+    color: hsl(0, 36%, 50%);
+    letter-spacing: 0.2rem;
+    word-spacing: 0.3rem;
+    font-weight: 400;
+  }
+
+  button {
+    margin-top: 5rem;
+    background-image: url(/images/icon-arrow.svg);
+    height: 40px;
+    width: 6.5rem;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: hsl(0, 36%, 70%);
+    outline: none;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border: 2px solid hsl(0, 36%, 70%);
+    border-radius: 10rem;
+    margin-left: 10px;
+
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: hsl(0, 36%, 50%);
+    border: 2px solid hsl(0, 36%, 50%);
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .invalid {
+    display: block;
+  }
+
+  .hide .valid {
+    display: none;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    grid-template-rows: 100vh;
+  }
+
+  .grid-image {
+    background-image: url(/images/hero-desktop.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .grid-content {
+    background: url(/images/bg-pattern-desktop.svg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .logo {
+    background-image: url(/images/logo.svg);
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 400px;
+
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+  }
+
+  .bold {
+    font-size: 6rem;
+    letter-spacing: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0;
+  }
+
+  .black {
+    color: hsl(0, 0%, 25%);
+  }
+
+  .grid-content div,
+  p,
+  input {
+    margin-left: 8rem;
+  }
+
+  .aaha {
+    margin-top: 20px;
+    color: hsl(0, 36%, 70%);
+  }
+
+  .soon {
+    margin-bottom: 2rem;
+  }
+  p {
+    font-size: 1.7rem;
+    width: 600px;
+    color: hsl(0, 36%, 70%);
+    letter-spacing: 0.2rem;
+    word-spacing: 0.3rem;
+  }
+  input {
+    margin-top: 5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 30rem;
+    border-radius: 10rem;
+    font-size: 1.5rem;
+    padding-left: 1rem;
+
+    border: 2px solid hsl(0, 36%, 70%);
+    background: none;
+    outline: none;
+
+    color: hsl(0, 36%, 50%);
+    letter-spacing: 0.2rem;
+    word-spacing: 0.3rem;
+    font-weight: 400;
+  }
+
+  button {
+    margin-top: 5rem;
+    background-image: url(/images/icon-arrow.svg);
+    height: 40px;
+    width: 6.5rem;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: hsl(0, 36%, 70%);
+    outline: none;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border: 2px solid hsl(0, 36%, 70%);
+    border-radius: 10rem;
+    margin-left: 10px;
+
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: hsl(0, 36%, 50%);
+    border: 2px solid hsl(0, 36%, 50%);
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .invalid {
+    display: block;
+  }
+
+  .hide .valid {
+    display: none;
+  }
+}
+@media only screen and (min-width: 767px) and (max-width: 992px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    grid-template-rows: 100vh;
+  }
+
+  .grid-image {
+    background-image: url(/images/hero-desktop.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .grid-content {
+    background: url(/images/bg-pattern-desktop.svg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .logo {
+    background-image: url(/images/logo.svg);
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 400px;
+
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+  }
+
+  .bold {
+    font-size: 4rem;
+    letter-spacing: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0;
+  }
+
+  .black {
+    color: hsl(0, 0%, 25%);
+  }
+
+  .grid-content div,
+  p,
+  input {
+    margin-left: 6rem;
+  }
+
+  .aaha {
+    margin-top: 20px;
+    color: hsl(0, 36%, 70%);
+  }
+
+  .soon {
+    margin-bottom: 2rem;
+  }
+  p {
+    font-size: 1.7rem;
+    width: 400px;
+    color: hsl(0, 36%, 70%);
+    letter-spacing: 0.2rem;
+    word-spacing: 0.3rem;
+    margin-bottom: 2px;
+  }
+  input {
+    margin-top: 5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 30rem;
+    border-radius: 10rem;
+    font-size: 1.5rem;
+    padding-left: 1rem;
+
+    border: 2px solid hsl(0, 36%, 70%);
+    background: none;
+    outline: none;
+
+    color: hsl(0, 36%, 50%);
+    letter-spacing: 0.2rem;
+    word-spacing: 0.3rem;
+    font-weight: 400;
+  }
+
+  button {
+    margin-top: 5rem;
+    background-image: url(/images/icon-arrow.svg);
+    height: 40px;
+    width: 6.5rem;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: hsl(0, 36%, 70%);
+    outline: none;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border: 2px solid hsl(0, 36%, 70%);
+    border-radius: 10rem;
+    margin-left: 10px;
+
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: hsl(0, 36%, 50%);
+    border: 2px solid hsl(0, 36%, 50%);
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .invalid {
+    display: block;
+  }
+
+  .hide .valid {
+    display: none;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+  .grid-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+
+  .grid-image {
+    background-image: url(/images/hero-mobile.jpg);
+    background-size: cover;
+    background-position: start;
+    height: 200px;
+    width: 100vw;
+    margin-bottom: 0px;
+  }
+  .bold {
+    font-size: 3rem;
+    letter-spacing: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 0;
+    text-align: center;
+  }
+  .black {
+    color: hsl(0, 0%, 25%);
+  }
+  .aaha {
+    margin-top: 20px;
+    color: hsl(0, 36%, 70%);
+  }
+  .soon {
+    margin-bottom: 4px;
+  }
+  p {
+    font-size: 1.7rem;
+    width: 400px;
+    color: hsl(0, 36%, 70%);
+    letter-spacing: 0.2rem;
+    word-spacing: 0.3rem;
+    margin-bottom: 0;
+  }
+
+  input {
+    margin-top: 5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 30rem;
+    border-radius: 10rem;
+    font-size: 1.5rem;
+    padding-left: 1rem;
+
+    border: 2px solid hsl(0, 36%, 70%);
+    background: none;
+    outline: none;
+
+    color: hsl(0, 36%, 50%);
+    letter-spacing: 0.2rem;
+    word-spacing: 0.3rem;
+    font-weight: 400;
+  }
+
+  button {
+    margin-top: 5rem;
+    background-image: url(/images/icon-arrow.svg);
+    height: 40px;
+    width: 6.5rem;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: hsl(0, 36%, 70%);
+    outline: none;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border: 2px solid hsl(0, 36%, 70%);
+    border-radius: 10rem;
+    margin-left: 10px;
+
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: hsl(0, 36%, 50%);
+    border: 2px solid hsl(0, 36%, 50%);
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .invalid {
+    display: block;
+  }
+
+  .hide .valid {
+    display: none;
+  }
+}
+@media only screen and (min-width: 400px) and (max-width: 600px) {
+  .grid-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    width: 100vh;
+    height: 100vh;
+  }
+
+  .grid-image {
+    background-image: url(/images/hero-mobile.jpg);
+    background-size: cover;
+    background-position: start;
+    height: 270px;
+    width: 100vh;
+    margin-bottom: 20px;
+  }
+  .bold {
+    font-size: 4rem;
+    letter-spacing: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 0;
+    text-align: center;
+  }
+  .black {
+    color: hsl(0, 0%, 25%);
+  }
+  .aaha {
+    margin-top: 20px;
+    color: hsl(0, 36%, 70%);
+  }
+  .soon {
+    margin-bottom: 2rem;
+  }
+  p {
+    font-size: 1.7rem;
+    width: 400px;
+    color: hsl(0, 36%, 70%);
+    letter-spacing: 0.2rem;
+    word-spacing: 0.3rem;
+    margin-bottom: 0;
+    text-align: center;
+  }
+  input {
+    margin-top: 5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 30rem;
+    border-radius: 10rem;
+    font-size: 1.5rem;
+    padding-left: 1rem;
+
+    border: 2px solid hsl(0, 36%, 70%);
+    background: none;
+    outline: none;
+
+    color: hsl(0, 36%, 50%);
+    letter-spacing: 0.2rem;
+    word-spacing: 0.3rem;
+    font-weight: 400;
+  }
+
+  button {
+    margin-top: 5rem;
+    background-image: url(/images/icon-arrow.svg);
+    height: 40px;
+    width: 6.5rem;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: hsl(0, 36%, 70%);
+    outline: none;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border: 2px solid hsl(0, 36%, 70%);
+    border-radius: 10rem;
+    margin-left: 10px;
+
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: hsl(0, 36%, 50%);
+    border: 2px solid hsl(0, 36%, 50%);
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .invalid {
+    display: block;
+  }
+
+  .hide .valid {
+    display: none;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .grid-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    width: 100vh;
+  }
+
+  .grid-image {
+    background-image: url(/images/hero-mobile.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    width: 100vh;
+    margin-bottom: 20px;
+  }
+  .bold {
+    font-size: 6rem;
+    letter-spacing: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 0;
+    text-align: center;
+  }
+  .black {
+    color: hsl(0, 0%, 25%);
+  }
+  .aaha {
+    margin-top: 20px;
+    color: hsl(0, 36%, 70%);
+  }
+  .soon {
+    margin-bottom: 5rem;
+  }
+  p {
+    font-size: 1.7rem;
+    width: 400px;
+    color: hsl(0, 36%, 70%);
+    letter-spacing: 0.2rem;
+    word-spacing: 0.3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  input {
+    margin-top: 5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 30rem;
+    border-radius: 10rem;
+    font-size: 1.5rem;
+    padding-left: 1rem;
+
+    border: 2px solid hsl(0, 36%, 70%);
+    background: none;
+    outline: none;
+
+    color: hsl(0, 36%, 50%);
+    letter-spacing: 0.2rem;
+    word-spacing: 0.3rem;
+    font-weight: 400;
+  }
+
+  button {
+    margin-top: 5rem;
+    background-image: url(/images/icon-arrow.svg);
+    height: 40px;
+    width: 6.5rem;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: hsl(0, 36%, 70%);
+    outline: none;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border: 2px solid hsl(0, 36%, 70%);
+    border-radius: 10rem;
+    margin-left: 10px;
+
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: hsl(0, 36%, 50%);
+    border: 2px solid hsl(0, 36%, 50%);
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .invalid {
+    display: block;
+  }
+
+  .hide .valid {
+    display: none;
+  }
+}
